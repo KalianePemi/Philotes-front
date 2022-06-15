@@ -1,0 +1,28 @@
+
+*{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* barra de pesquisa*/
+.d-flex{
+  float:right;
+  margin-left: 1320px;
+  margin-right: 0px;
+}
+body{
+  background-color: rgb(200, 243, 243);
+}
+.card{
+  width: 600px;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+/* fim barra pesquissa */
+#manter-login-checkbox{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+#arqfoto{
+  margin-left: 15px;
+}
+

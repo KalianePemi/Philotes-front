@@ -1,0 +1,19 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(255, 255, 255);">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">PHILOTES</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="buttons" [style.display]="isLoggedIn() ? 'block' : 'none'" >
+          <button class="botaoPet color-1" (click)="logout()">logout</button>
+          <button class="botaoPet color-2" routerLink="perdipet">perdi meu pet</button>
+        </div>
+        <div class="buttons" [style.display]="isLoggedIn() ? 'none' : 'block'" >
+          <button class="botaoPet color-1" routerLink="/registrar">registrar</button>
+          <button class="botaoPet color-2" routerLink="/login">login</button>
+        </div>
+        <a>{{userName()}}</a>
+      </div>
+    </div>
+  </nav>
+
+

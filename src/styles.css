@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+nav{
+  border: 1px solid #000000;
+ box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+}
+#rodape{
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 38, 255, 0.603);
+  color: #FFF;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body{
+  background-color: rgb(200, 243, 243);
+}
+#btnPhilotes{
+  color: aliceblue;
+}
+
+/*
+*{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */

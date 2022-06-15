@@ -1,0 +1,67 @@
+#aaaa
+{
+ margin-block-start: initial;
+
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.buttons {
+  text-align: center;
+  position: absolute;
+  right: 40px;
+}
+
+.botaoPet {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 0px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  margin-left: 10px;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.botaoPet:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.botaoPet:focus {
+  outline: none;
+}
+
+.botaoPet.color-1 {
+  background-image: linear-gradient(to right, #dfcb1a, #dfcb1ae0, #dfcb1aab, #dcdf1aa8);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.botaoPet.color-2 {
+  background-image: linear-gradient(to right, #F01B00, #d90b20da, #D9410B, #F86D0C );
+  box-shadow: 0 4px 15px 0 rgba(196, 49, 49, 0.75);
+}
+
+.navbar {
+  background-color: #fff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+  border: none;
+  padding: 20px 10px;
+}

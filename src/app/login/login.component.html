@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head> </head>
+<body>
+
+  <!--FORMULARIO LOGIN-->
+
+
+  <div class="card" >
+
+    <div class="card-body">
+      <h5 class="card-title">LOGIN</h5>
+
+      <form class="row g-3">
+
+
+        <div class="col-12">
+          <label  for="usuario" class="form-label">Usuário</label>
+           <input   type="text" class="form-control" id="usuario" placeholder="@Usuario" #inputUsuario>
+        </div>
+
+
+
+       <div class="col-12">
+        <label for="inputPassword4" class="form-label">Senha</label>
+       <input type="password" class="form-control" id="inputPassword4" #inputPassword>
+       </div>
+
+
+         <div class="form-check" id="manter-login-checkbox">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+        Manter Login
+       </label>
+        </div>
+      </form>
+      <br>
+      <button  class="btn btn-primary" (click)="login(inputUsuario.value, inputPassword.value)">
+        Login
+      </button>
+  </div>
+</div>
+</body>
+

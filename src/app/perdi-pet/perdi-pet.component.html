@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head> </head>
+<body>
+
+  <!--FORMULARIO LOGIN-->
+
+
+  <div class="card" >
+
+    <div class="card-body">
+      <h5 class="card-title">FOTO DO PET</h5>
+
+      <form class="row g-3">
+
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Ultimo local visto</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Endereço onde o pet foi encontrado" #inputAddress>
+        </div>
+        <div class="col-12">
+          <label for="inputName" class="form-label">O Pet atende por?</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Nome do Pet" #inputName>
+        </div>
+        <div class="col-12">
+          <label for="inputSize" class="form-label">Qual o tamanho do pet</label>
+          <input type="number" class="form-control" id="inputSize" placeholder="Tamanho do Pet" #inputSize>
+        </div>
+        <div class="col-12">
+          <label for="inputColor" class="form-label">Qual a cor do Pet?</label>
+          <input type="text" class="form-control" id="inputColor" placeholder="Tente ser o mais preciso possível" #inputColor>
+        </div>
+        <div class="col-12">
+          <label for="inputBreed" class="form-label">O Pet possui raça?</label>
+          <input type="text" class="form-control" id="inputBreed" placeholder="Raça (opcional)" #inputBreed>
+        </div>
+
+        <div class="col-12">
+          <label for="inputGender" class="form-label">Sexo do Pet</label>
+          <input type="text" class="form-control" id="inputGender" placeholder="Macho ou Fêmea" #inputGender>
+        </div>
+
+        <div class="col-12">
+          <label for="inputDescription" class="form-label">Conte detalhes que ajudaram a encontra-lo</label>
+          <input type="text" class="form-control" id="inputDescription" placeholder="Ele estava usando uma coleira vermelha" #inputDescription>
+        </div>
+        <br>
+
+        <div class="mb-3" id="arqfoto">
+          <label for="formFile" class="form-label">Selecione uma foto do pet perdido</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+
+
+       <!--  <select class="form-select" aria-label="Default select example">
+          <option selected>Cor do Pet</option>
+          <option value="1">Branco</option>
+          <option value="2">Preto</option>
+          <option value="3">Marrom</option>
+          <option value="3">Cinza</option>
+          <option value="3">Bege</option>
+          <option value="3">Caramelo</option>
+        </select>
+ -->
+       </form>
+      <br>
+      <a (click)="addPet(inputName.value, inputBreed.value, inputSize.value, inputGender.value, inputDescription.value, inputAddress.value)" class="btn btn-primary">Confirmar Perdido</a>
+  </div>
+</div>
+</body>

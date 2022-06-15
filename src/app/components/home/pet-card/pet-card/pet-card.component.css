@@ -1,0 +1,127 @@
+
+/* cartao 1*/
+.card1 {
+  float: left;
+  background-color: rgba(64, 156, 156, 0.527);
+  margin-left: 100px;
+  margin-top:50px;
+  width: 400px;
+  height: 500px;
+  border-radius: 35px;
+  box-shadow: 10px 5px 25px;
+
+
+}
+.imagempet1{
+  margin: 20px;
+  width: 360px;
+  height: 250px;
+  background-color: rgba(116, 119, 167, 0.281);
+  border-radius: 35px ;
+  box-shadow: 1px 1px 25px;
+}
+.div1{
+  width: 370px;
+  height: 50px;
+  margin-left: 15px;
+
+  /* background-color:lightcoral; */
+}
+.emailclick1{
+  /* background-color: lawngreen; */
+  margin-left: 20px;
+  width: 170px;
+  height: 100px;
+}
+
+.imgEmail1{
+  width: 45px;
+  margin-top:15px;
+  /* background-color: blue; */
+
+}
+
+.numero1{
+  transform: translate(50px,-30px);
+}
+.email1{
+  transform: translate(50px,-25px);
+}
+.cachorro1{
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+.nomePet{
+
+  margin-left: 15px;
+  text-align:start;
+  /* background-color:lightgray; */
+  font-size: 25px;
+  width: 185px;
+  height: 35px;
+
+}
+
+.localPet{
+
+  margin-left: 15px;
+  text-align:start;
+  /* background-color:rgb(145, 63, 63); */
+  font-size: 20px;
+  width: 370px;
+  height: 35px;
+
+}
+.descricaoPet{
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+/* fim cartao 1 */
+
+
+
+
+
+
+
+
+
+
+.botaoPet {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin: 0px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  margin-left: 10px;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+.botaoPet:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.botaoPet:focus {
+  outline: none;
+}
+
+.botaoPet.color-1 {
+  background-image: linear-gradient(to right, #00b3ffea, #00ff95, #00ffbf, #00ffdd);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}

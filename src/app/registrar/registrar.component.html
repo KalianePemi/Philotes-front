@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head> </head>
+<body>
+  <!--FORMULARIO LOGIN-->
+
+
+  <div class="card" >
+
+    <div class="card-body">
+      <h5 class="card-title">REGISTRAR</h5>
+
+      <form class="row g-3">
+
+        <div class="col-md-6">
+          <label for="inputName" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="inputName" #inputNome>
+        </div>
+
+
+
+
+        <div class="col-12">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="nome@exemplo.com" #inputEmail>
+        </div>
+
+
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Endereço Residencial</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos bobos" #inputEndereco>
+        </div>
+
+
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="São Paulo" #inputCidade>
+        </div>
+
+        <div class="col-md-6">
+         <label for="inputPassword4" class="form-label">Crie uma senha</label>
+        <input type="password" class="form-control" id="inputPassword4" #inputPassword>
+        </div>
+
+
+      </form>
+
+
+        <br>
+
+        <button class="btn btn-primary" (click)="registroUsuario(inputNome.value,inputEmail.value, inputEndereco.value,inputCidade.value, inputPassword.value)">Registrar
+        </button>
+      </div>
+    </div>
+
+
+</body>
