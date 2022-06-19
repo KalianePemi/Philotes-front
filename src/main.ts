@@ -12,6 +12,6 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
 export class Constants {
-    private static isLocalTest = true
+    private static isLocalTest = false
     static baseURL = Constants.isLocalTest ? "http://localhost:5000/" : "https://bsite.net/philotes/"
 }
