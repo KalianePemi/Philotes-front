@@ -1,3 +1,4 @@
+import { Constants } from './../../../../../main';
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { Pet } from 'src/app/model/IPets.model';
 import { Router } from '@angular/router';
@@ -32,5 +33,9 @@ export class PetCardComponent implements OnInit {
       return "Olá, " + userName
     }
     return null
+  }
+
+  petFoto(): String | null {
+    return Constants.baseURL + this.pet.fotoPet
   }
 }

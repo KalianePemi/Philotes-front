@@ -47,7 +47,7 @@
 
         <div class="mb-3" id="arqfoto">
           <label for="formFile" class="form-label">Selecione uma foto do pet perdido</label>
-          <input class="form-control" type="file" id="formFile">
+          <input class="form-control" type="file" id="formFile" #inputFile>
         </div>
 
 
@@ -63,7 +63,7 @@
  -->
        </form>
       <br>
-      <a (click)="addPet(inputName.value, inputBreed.value, inputSize.value, inputGender.value, inputDescription.value, inputAddress.value)" class="btn btn-primary">Confirmar Perdido</a>
+      <a (click)="addPet(inputName.value, inputBreed.value, inputSize.value, inputGender.value, inputDescription.value, inputAddress.value, inputFile.files)" class="btn btn-primary">Confirmar Perdido</a>
   </div>
 </div>
 </body>

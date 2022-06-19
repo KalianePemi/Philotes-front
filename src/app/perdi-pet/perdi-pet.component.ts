@@ -22,7 +22,8 @@ export class PerdiPetComponent implements OnInit {
     size: string,
     gender: string,
     description: string,
-    lastSeenLocation: string
+    lastSeenLocation: string,
+    foto: FileList | null
   ) : void {
     var user = this.userService.loggedUser()
     if (user == null) {
@@ -37,11 +38,24 @@ export class PerdiPetComponent implements OnInit {
         "usuarioId": user.id,
         "ultimoLocalVisto": lastSeenLocation
       }
-      console.log(pet)
-      this.petService.addPet(pet).subscribe(result => {
-        this.petService.showMessage("Pet adicionado com sucesso!", "Em breve você pode receber notificações no seu email, fique atento", "toast-success")
-        this.refreshComponent()
-      })
+      var addPet = (petToAdd: Pet) => {
+        console.log(petToAdd)
+        this.petService.addPet(petToAdd).subscribe(result => {
+          this.petService.showMessage("Pet adicionado com sucesso!", "Em breve você pode receber notificações no seu email, fique atento", "toast-success")
+          this.refreshComponent()
+        })
+      }
+      if (foto != null) {
+        this.petService.addPetPhoto(foto[0], progress => {
+          // Use this to show your upload progress
+          console.log("Progress: " + progress)
+        }, file => {
+          pet.fotoPet = file
+          addPet(pet)
+        }).subscribe()
+      } else {
+        addPet(pet)
+      }
     }
   }
 

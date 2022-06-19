@@ -7,5 +7,5 @@ export interface Pet {
     descricao: string
     usuarioId: number
     ultimoLocalVisto?: string
-    /* fotoPet: ...; */
+    fotoPet?: string
 }

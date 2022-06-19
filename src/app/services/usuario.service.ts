@@ -3,6 +3,7 @@ import { catchError, EMPTY, map, Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
 import { Usuario } from '../model/IUsuario.model';
+import { Constants } from 'src/main';
 
 
 @Injectable({
@@ -11,8 +12,7 @@ import { Usuario } from '../model/IUsuario.model';
 export class UsuarioService {
 
   private userKey = "userKey"
-  private URL: string = 'https://bsite.net/philotes/Usuario'
-  //private URL: string = 'http://localhost:5000/Usuario'
+  private URL: string = Constants.baseURL + "Usuario"
 
   constructor(private http: HttpClient, private toastr: ToastrService) { }
 

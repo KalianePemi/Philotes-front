@@ -10,3 +10,8 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+export class Constants {
+    private static isLocalTest = true
+    static baseURL = Constants.isLocalTest ? "http://localhost:5000/" : "https://bsite.net/philotes/"
+}

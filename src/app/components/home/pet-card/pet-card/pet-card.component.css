@@ -48,10 +48,12 @@
   transform: translate(50px,-25px);
 }
 .cachorro1{
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  object-fit: cover;
 }
+
 .nomePet{
 
   margin-left: 15px;
